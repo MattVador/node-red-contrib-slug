@@ -1,0 +1,35 @@
+<script type="text/javascript">
+	RED.nodes.registerType('Slug',{
+		category: 'function',
+		color: '#e2d96e',
+		icon: "function.png",
+		label: function() {
+			return this.name || "Slug";
+		},
+		defaults: {
+			name: {value:""}
+		},
+		inputs:1,
+		outputs:1
+	});
+</script>
+
+<script type="text/x-red" data-template-name="Slug">
+	<div class="form-row">
+		<label for="node-input-name"><i class="icon-tag"></i>Name</label>
+		<input type="text" id="node-input-name" placeholder="Name">
+	</div>
+</script>
+
+<script type="text/x-red" data-help-name="Slug">
+	<p><h2>Slug</h2></p>
+	<p>This API slugify the payload</p>
+	<p><u>Input</u></p>
+	<ul>
+		<li><code>msg.payload</code>:A string to slug</li>
+	</ul>
+	<p><u>Output</u></p>
+	<ul>
+		<li><code>msg.payload</code>: Input string slugified</li>
+	</ul>
+</script>
