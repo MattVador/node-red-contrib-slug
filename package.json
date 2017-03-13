@@ -1,0 +1,29 @@
+{
+	"name": "node-red-contrib-slug",
+	"version": "0.0.1",
+	"description": "Node-RED node slugify payload (based on nodejs slug : slugifies every string, even when it contains unicode).",
+	"node-red": {
+		"nodes": {
+			"slug": "node-red-contrib-slug.js"
+		}
+	},
+	"dependencies": {
+		"slug": ">=0.9.1"
+	},
+	"license": "MIT",
+	"author": {
+		"name": "mattvador"
+	},
+	"homepage": "https://github.com/mattvador/node-red-contrib-slug#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/mattvador/node-red-contrib-slug.git"
+	},
+	"bugs": {
+		"url": "https://github.com/mattvador/node-red-contrib-slug/issues"
+	},
+	"keywords": [
+		"node-red",
+		"slug"
+	]
+}
